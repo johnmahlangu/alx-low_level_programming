@@ -9,9 +9,9 @@ int main(void)
 {
 	char upper  = 'A';
 
-	while (upper < 'Z')
+	while (upper <= 'Z')
 	{
-		putchar(tolower(upper));
+		putchar(tolower(upper), "\n");
 		upper++;
 	}
 	return (0);
