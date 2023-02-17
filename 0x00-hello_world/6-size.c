@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <iostream>
+#include <string.h>
 /**
  * main - Entry point
  *
