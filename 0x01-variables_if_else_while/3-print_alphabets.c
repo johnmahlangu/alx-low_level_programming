@@ -9,11 +9,11 @@ int main(void)
 {
 	char ch = 'a';
 
-	for (ch, ch <= 'z', ch++)
+	for (ch = 'a', ch <= 'z', ch++)
 	{
 		putchar(ch);
 	}
-	for (ch, ch <= 'z', ch++)
+	for (ch = 'a', ch <= 'z', ch++)
 	{
 		putchar(toupper(ch));
 	}
