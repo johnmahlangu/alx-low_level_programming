@@ -13,5 +13,6 @@ int main(void)
 		putchar(num);
 		putchar(',');
 		putchar(' ');
+	return (0);
 	}
 }
