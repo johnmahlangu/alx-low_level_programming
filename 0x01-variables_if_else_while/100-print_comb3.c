@@ -6,7 +6,8 @@
  */
 int main(void)
 {
-	int i, k = '0';
+	int i = '0';
+	int k = '0';
 
 	for (i = '0'; i <= '9'; i++)
 	{
