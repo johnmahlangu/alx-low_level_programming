@@ -11,12 +11,12 @@ int main(void)
 
 	for (i = '0'; i <= '9'; i++)
 	{
+		putchar('i');
+		putchar(',');
+		putchar(' ');	
 		for (k = 0; k <= '9'; k++)
 		{
-			putchar('i');
 			putchar('k');
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
