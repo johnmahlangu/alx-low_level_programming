@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_alphabet_x10 - many
  *
@@ -7,11 +6,15 @@
  */
 void print_alphabet_x10(void)
 {
-	char i;
+	char i = '0', j;
 
-	for (i = 'a'; i <= 'z'; i++)
+	while (i <= '9')
 	{
-		_putchar(i);
+		j = 'a';
+		while (j <= 'z')
+		{
+			_putchar(j);
+		}		
+	_putchar('\n');		
 	}
-	_putchar('\n');
 }
