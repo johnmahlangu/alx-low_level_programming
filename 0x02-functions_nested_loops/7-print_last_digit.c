@@ -4,7 +4,7 @@
  * @c: number
  * Return: 0
  */
-int print_last_digit(int)
+int print_last_digit(int c)
 {
 	int i = c % 10;
 
