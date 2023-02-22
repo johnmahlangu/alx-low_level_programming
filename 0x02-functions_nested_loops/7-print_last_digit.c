@@ -9,3 +9,4 @@ int print_last_digit(int c)
 	int i = c % 10;
 
 	_putchar(i);
+}
