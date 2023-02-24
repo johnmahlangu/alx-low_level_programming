@@ -1,8 +1,6 @@
 #include "main.h"
 /**
  * more_numbers - print numbers
- *
- * Return: 0
  */
 void more_numbers(void)
 {
@@ -11,7 +9,7 @@ void more_numbers(void)
 	while (i <= 9)
 	{
 		k = 0;
-		while (k <= 13)
+		while (k <= 14)
 		{
 			if (k >= 10)
 			{
