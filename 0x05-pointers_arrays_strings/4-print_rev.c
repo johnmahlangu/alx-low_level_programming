@@ -6,7 +6,6 @@
 void print_rev(char *s)
 {
 	int i;
-	int len;
 
 	for (i = 0; s[i] != '\n'; i++)
 	{
