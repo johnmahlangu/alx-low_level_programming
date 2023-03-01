@@ -8,6 +8,7 @@
 void print_to_98(int n)
 {
 	int i;
+	last = 98;
 
 	for (i = n; i <= 98; i++)
 	{
@@ -16,7 +17,8 @@ void print_to_98(int n)
 			printf("%d, ",i);
 		}
 		else
-			printf("98");
+			printf(last);
+		printf("\n");
 	}
 }
 
