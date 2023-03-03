@@ -2,7 +2,7 @@
 /**
  * _strcmp - compare string
  * @s1: char1
- * @s2@: char2
+ * @s2: char2
  * Return: compare
  */
 int _strcmp(char *s1, char *s2)
