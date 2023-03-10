@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 0 || argc == 1)
 	{
-		printf("Error");
+		printf("Error\n");
 	}
 	else
 	{
@@ -24,7 +24,8 @@ int main(int argc, char *argv[])
 				mul *= atoi(argv[i]);
 			}
 		}
+		printf("%d\n", mul);				
 	}
-	printf("%d\n", mul);
+	
 	return (0);
 }
