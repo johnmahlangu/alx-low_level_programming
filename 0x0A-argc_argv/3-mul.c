@@ -10,12 +10,11 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int mul = 1;
-	int ret;
 
 	if (argc == 0 || argc == 1)
 	{
 		printf("Error\n");
-		ret = 1;
+		return (1);
 	}
 	else
 	{
@@ -27,8 +26,7 @@ int main(int argc, char *argv[])
 			}
 		}
 		printf("%d\n", mul);
-		ret = 0;
 	}
 
-	return (ret);
+	return (0);
 }
