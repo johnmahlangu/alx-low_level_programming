@@ -3,7 +3,7 @@
 /**
  * str_concat - concat string
  * @s1: string 1
- * @s2; string 2
+ * @s2: string 2
  * Return: concatenated
  */
 char *str_concat(char *s1, char *s2)
@@ -34,7 +34,8 @@ char *str_concat(char *s1, char *s2)
 	}
 	k = i + j;
 	c = malloc((sizeof(char) * k) + 1);
-
+	if ( c == NULL)
+		return (NULL);
 	while (a < i)
 	{
 		c[a] = s1[a];
