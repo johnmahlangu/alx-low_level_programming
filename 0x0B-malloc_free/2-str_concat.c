@@ -8,26 +8,19 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0;
-	int j = 0;
-	int k = 0;
-	int a = 0;
-	int b = 0;
+	int i = 0, j = 0, k = 0, a = 0, b = 0;
 	char *c;
 
 	if (s1 == NULL)
 		return ("");
-
 	while (s1[i] != '\0')
 	{
 		i++;
 	}
-
 	if (s2 == NULL)
 	{
 		return ("");
 	}
-
 	while (s2[j] != '\0')
 	{
 		j++;
