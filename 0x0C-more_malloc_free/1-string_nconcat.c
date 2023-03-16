@@ -15,19 +15,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *c;
 
 	if (s1 == NULL)
-		return (" ");
+		return ("");
 	while (s1[i] != '\0')
 	{
 		i++;
 	}
 	c = malloc(sizeof(char) * (n + i + 1));
+	if (c == NULL)
+		return (NULL);
 	while (j < i)
 	{
 		c[j] = s1[j];
 		j++;
 	}
 	if (s2 == NULL)
-		return (" ");
+		return ("");
 	while (k < n)
 	{
 		c[i] = s2[k];
