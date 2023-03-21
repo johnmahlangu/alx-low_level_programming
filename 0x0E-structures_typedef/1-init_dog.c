@@ -4,7 +4,7 @@
  * init_dog - initialize a dog
  * @d: dog
  * @name: name
- * @age: age 
+ * @age: age
  * @owner: owner
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
