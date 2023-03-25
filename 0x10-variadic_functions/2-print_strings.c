@@ -18,17 +18,38 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (separator == NULL)
 		{
-			printf("%s", s);
+			if (s == NULL)
+			{
+				printf("(nil)");
+			}
+			else
+			{
+				printf("%s", s);
+			}
 		}
 		else
 		{
 			if (i == 0)
 			{
-				printf("%s", s);
+				if (s == NULL)
+				{
+					printf("(nil)");
+				}
+				else
+				{
+					printf("%s", s);
+				}			
 			}
 			else
 			{
-				printf("%s%s", separator, s);
+				if (s == NULL)
+				{
+					printf("%s(nil)", separator);
+				}
+				else
+				{
+					printf("%s%s", separator, s);
+				}
 			}
 		}
 	}
