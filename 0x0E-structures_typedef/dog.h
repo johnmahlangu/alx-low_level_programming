@@ -8,12 +8,12 @@
  * @owner: ownwer
  * Description: struct for dog
  */
-struct dog
+typedef struct
 {
 	char *name;
 	float age;
 	char *owner;
-};
+}dog_t;
 /**
  * init_dog - ...
  * @d: ...
