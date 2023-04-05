@@ -1,20 +1,35 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _calloc - kalogs
- * @nmemb: num ele
- * @size: byte size
+ * copy - ...
+ * @s: ...
+ * @c: ....
+ * @i: ...
  * Return: pointer
  */
+char *copy(char *s, char c, unsigned int i)
+{
+	unsigned int j;
+
+	for (j = 0; j < i; j++)
+	{
+		s[j] = c;
+	}
+	return (s);
+}
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *s;
-
-	s = malloc(nmemb);
+	char *ptr;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	if (s == NULL)
-		return (NULL);
 
+	ptr = malloc(size * nmemb);
+
+	if (ptr == NULL)
+		return (NULL);
+	copy(ptr, 0, nmemb * size);
+
+	return (ptr);
+}
 
