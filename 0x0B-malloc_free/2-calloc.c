@@ -2,6 +2,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * copy - ...
+ * @c: ...
+ * @s: ...
+ * @i: ..
+ * Return: ...
+ */
+char *copy(char *s, char c, unsigned int i)
+{
+	unsigned int j;
+
+	for (j = 0; j < i; j++)
+	{
+		s[j] = c;
+	}
+
+	return (s);
+}
+/**
  * _calloc - ...
  * @nmemb: ...
  * @size: ...
@@ -9,23 +27,15 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i;
-	int n;
-	char *s;
+	char *ptr;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	n = nmemb * size;
-	s = malloc(n);
+	ptr = malloc(size * nmemb);
 
-	if (s == NULL)
+	if (ptr == NULL)
 		return (NULL);
-
-	while (i < n)
-	{
-		s[i] = 0;
-		i++;
-	}
-	return (s);
+	copy(ptr, 0, nmemb * size);
+	return (ptr);
 }
